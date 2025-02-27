@@ -22,7 +22,6 @@
     "@privyid/browserslist-config": "^1.1.0",
     "@privyid/nhp": "1.0.1",
     "@privyid/nuapi": "^1.0.0",
-    "@privyid/nuauth": "^1.1.0",
     "@privyid/persona": "^1.1.0",
     "@privyid/persona-icon": "^1.1.0",
     "@privyid/persona-ilustration": "^1.1.0",

@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@privyid/nhp',
     '@privyid/nuapi',
-    '@privyid/nuauth',
     '@pinia/nuxt',
     '@privyid/persona',
     '@privyid/persona',
