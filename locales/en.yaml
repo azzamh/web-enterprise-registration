@@ -1,0 +1,58 @@
+term-of-use:
+  title: Terms of Use
+  subtitle: Effective date
+  agree: By clicking Register, you agree to our Terms of Use
+  need-to-scroll: Need scroll down
+register-step-1:
+  title: >-
+    Sign. Secure. Streamline 
+    your business documents 
+    with
+  privy-enterprise: Privy Enterprise
+  full-name: Full Name
+  email: Email
+  phone-number: Phone Number
+  company-name: Company Name
+  business-sector: Business Sector
+  company-name-placeholder: Your Company Name, Inc.
+register-step-2:
+  title: >-
+    Complete registration,
+    get
+  free-trial: free 14-day trial
+  benefit-1: Employee account seats
+  benefit-2: Unlimited Signature
+  benefit-3: Enterprise seal and stamp
+  found-any-problem: Found any problem?
+  contact-us: Contact us
+  label:
+    privyid: PrivyID of the enterprise owner
+    npwp: Company NPWP
+    npwp-doc: NPWP document
+    referral-code: Referral code (optional)
+  check-title:
+    no-npwp: I don't have NPWP yet
+    enable-eseal: Enable e-seal and stamp feature
+  check-subtitle:
+    no-npwp: >-
+      Please provide it later to comply with enterprise 
+      registration regulations. We will follow up shortly.
+    enable-eseal: >-
+      Ensure the authenticity and integrity of your signed 
+      documents with electronic seal and stamp
+  placeholder:
+    npwp-doc: No file chosen
+  npwp-file-info: Upload in PDF, PNG, or JPG/JPEG format (maximum size 5MB)
+  choose-file: Choose file
+  no-file-chosen: No file chosen
+  dont-have-privyid: Don't have a PrivyID?
+  banner:
+    npwp: >-
+      Please provide your NPWP information in the 
+      Admin Center later to activate e-seal and stamp
+back: Back
+cancel: Cancel
+continue: Continue
+register: Register
+check: Check
+current-lang: English

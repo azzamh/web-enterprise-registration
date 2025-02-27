@@ -1,0 +1,58 @@
+term-of-use:
+  title: Ketentuan Penggunaan
+  subtitle: Tanggal efektif
+  agree: Dengan mengeklik Daftar, Anda menyetujui Ketentuan Penggunaan kami
+  need-to-scroll: Perlu scroll ke bawah
+register-step-1:
+  title: >-
+    Tanda tangan. Aman. Mempermudah
+    dokumen bisnis Anda
+    dengan
+  privy-enterprise: Privy Enterprise
+  full-name: Nama Lengkap
+  email: Email
+  phone-number: Nomor Telepon
+  company-name: Nama Perusahaan
+  business-sector: Sektor Bisnis
+  company-name-placeholder: PT Nama Perusahaan Anda
+register-step-2:
+  title: >-
+    Selesaikan pendaftaran,
+    dapatkan
+  free-trial: uji coba gratis 14 hari
+  benefit-1: Akun untuk karyawan
+  benefit-2: Tanda tangan tanpa batas
+  benefit-3: Segel dan stempel Perusahaan
+  found-any-problem: Menemukan masalah?
+  contact-us: Hubungi kami
+  label:
+    privyid: PrivyID dari pemilik perusahaan
+    npwp: NPWP Perusahaan
+    npwp-doc: Dokumen NPWP
+    referral-code: Kode referral (opsional)
+  check-title:
+    no-npwp: Saya belum memiliki NPWP
+    enable-eseal: Aktifkan fitur e-seal dan stempel
+  check-subtitle:
+    no-npwp: >-
+      Harap sediakan nanti untuk mematuhi peraturan
+      pendaftaran perusahaan. Kami akan segera menindaklanjuti.
+    enable-eseal: >-
+      Pastikan keaslian dan integritas dokumen
+      yang ditandatangani dengan segel dan stempel elektronik
+  placeholder:
+    npwp-doc: Tidak ada file yang dipilih
+  npwp-file-info: Unggah dalam format PDF, PNG, atau JPG/JPEG (ukuran maksimal 5MB)
+  choose-file: Pilih file
+  no-file-chosen: Tidak ada file yang dipilih
+  dont-have-privyid: Belum memiliki PrivyID?
+  banner:
+    npwp: >-
+      Harap sediakan informasi NPWP Anda di
+      Pusat Admin nanti untuk mengaktifkan e-seal dan stempel
+cancel: Batal
+continue: Lanjutkan
+register: Daftar
+check: Cek
+current-lang: Indonesia
+back: Kembali
