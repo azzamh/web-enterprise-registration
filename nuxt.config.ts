@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/i18n',
+    '@privyid/nhp',
+    '@privyid/nuapi',
+    '@privyid/nuauth',
     '@pinia/nuxt',
     '@privyid/persona',
     '@privyid/persona',
