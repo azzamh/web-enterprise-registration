@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen flex flex-col">
-    <header class="">
+    <header class="py-4">
       <p-navbar>
         <p-navbar-nav align="center">
           <img src="~/assets/images/logo-privy.svg" alt="Nuxt Logo" class="h-8" />          
@@ -12,7 +12,7 @@
       <slot />
     </main>
 
-    <footer class="flex justify-center items-center text-center p-4 mt-8 gap-4">
+    <footer class="flex justify-center items-center text-center p-4 mt-0 gap-4">
       <p-dropdown icon @change="changeLocale">
         <template #button-content>
           <pi-internet-16 class="mr-2"/>
