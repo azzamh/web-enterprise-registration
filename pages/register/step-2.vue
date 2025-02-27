@@ -157,7 +157,7 @@
                   >
                     <template #append>
                       <pi-checkmark-circle-solid-16 v-if="validReferral" class="text-success" />
-                      <p-spinner v-else-if="isLoading"/>
+                      <p-spinner v-if="isLoading"/>
                     </template>
                   </p-input>
                   <p-button
@@ -189,15 +189,16 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { watchDebounced } from '@vueuse/core'
 
-// Jika masih ingin menggunakan i18n
+
 const { t } = useI18n({ useScope: 'global' })
 const validReferral = ref(false)
 const isLoading = ref(false)
 
-// State form
+
 const form = ref({
   enterpriseOwner: "",
   companyNpwp: "",
@@ -227,7 +228,12 @@ const isFormValid = computed(() => {
   }
 })
 
-// Handler tombol "Check" di referral code
+watchDebounced(() => form.value.referralCode, (newVal) => {
+  console.log("Referral code changed:", newVal)
+  validReferral.value = false
+}, { debounce: 200 })
+
+
 const checkReferral = () => {
   if (!form.value.referralCode) return  
   isLoading.value = true
@@ -235,12 +241,9 @@ const checkReferral = () => {
     validReferral.value = true
     isLoading.value = false
   }, 3000)
-  // Di sini Anda bisa memanggil API atau melakukan pengecekan kode referral
-  // misal alert("Referral code checked!")
   console.log("Referral code checked:", form.value.referralCode)
 }
 
-// Handler submit form
 const submitForm = () => {
   if (!isFormValid.value) return
   // Arahkan ke step selanjutnya atau kirim data
