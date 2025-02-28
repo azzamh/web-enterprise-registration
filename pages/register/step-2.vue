@@ -246,6 +246,7 @@
       </div>
     </div>
   </div>
+  <ModalCreatePrivyAccount v-model="createPrivyModal"/>
 </template>
 
 <script setup>
@@ -257,7 +258,7 @@ import { watchDebounced } from '@vueuse/core'
 const { t } = useI18n({ useScope: 'global' })
 const validReferral = ref(false)
 const isLoading = ref(false)
-
+const createPrivyModal = ref(false)
 
 const form = ref({
   enterpriseOwner: "",
@@ -316,6 +317,7 @@ const submitForm = () => {
 }
 
 function registerPrivy() {
+  createPrivyModal.value = true
 }
 </script>
 

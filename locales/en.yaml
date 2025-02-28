@@ -57,6 +57,12 @@ register-step-2:
     npwp: >-
       Please provide your NPWP information in the 
       Admin Center later to activate e-seal and stamp
+create-privy-modal:
+  title: Create your Privy account
+  scan-qr: Scan this QR code to register via Privy app
+  download-app: or download it on
+  or: or
+  register: Register via web
 back: Back
 cancel: Cancel
 continue: Continue

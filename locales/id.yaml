@@ -57,6 +57,12 @@ register-step-2:
     npwp: >-
       Harap sediakan informasi NPWP Anda di
       Pusat Admin nanti untuk mengaktifkan e-seal dan stempel
+create-privy-modal:
+  title: Buat akun Privy Anda
+  scan-qr: Pindai kode QR ini untuk mendaftar melalui aplikasi Privy
+  download-app: atau unduh di
+  or: atau
+  register: Daftar via web
 cancel: Batal
 continue: Lanjutkan
 register: Daftar
