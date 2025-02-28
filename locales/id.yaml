@@ -63,6 +63,12 @@ create-privy-modal:
   download-app: atau unduh di
   or: atau
   register: Daftar via web
+contact-us-modal:
+  title: Hubungi Kami
+  subtitle: Laporkan masalah dengan menghubungi helpdesk kami melalui
+  whatsapp: WhatsApp
+  live-chat: Live Chat
+  email: Email
 cancel: Batal
 continue: Lanjutkan
 register: Daftar

@@ -30,7 +30,7 @@
         <!-- Link Contact Us -->
         <div class="text-sm text-subtle">
           {{ t('register-step-2.found-any-problem') }}
-          <a href="#" class="text-info underline font-semibold hover:underline text-cs">
+          <a href="#" class="text-info underline font-semibold hover:underline text-cs" @click="contactUsModal = true">
             {{ t('register-step-2.contact-us') }}
           </a>
         </div>
@@ -247,6 +247,7 @@
     </div>
   </div>
   <ModalCreatePrivyAccount v-model="createPrivyModal"/>
+  <ModalContactUs v-model="contactUsModal"/>
 </template>
 
 <script setup>
@@ -259,6 +260,7 @@ const { t } = useI18n({ useScope: 'global' })
 const validReferral = ref(false)
 const isLoading = ref(false)
 const createPrivyModal = ref(false)
+const contactUsModal = ref(false)
 
 const form = ref({
   enterpriseOwner: "",
@@ -277,10 +279,6 @@ function isValid(value, minLength = 1) {
   return value.length >= minLength
 }
 
-async function cekReferral() {
-  if (!form.value.referralCode) return
-  console.log("Referral code checked:", form.value.referralCode)
-}
 
 // Contoh validasi sederhana (opsional, sesuaikan kebutuhan)
 const isFormValid = computed(() => {

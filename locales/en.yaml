@@ -63,6 +63,12 @@ create-privy-modal:
   download-app: or download it on
   or: or
   register: Register via web
+contact-us-modal:
+  title: Contact Us
+  subtitle: Report the problem by contacting our helpdesk via
+  whatsapp: WhatsApp
+  live-chat: Live Chat
+  email: Email
 back: Back
 cancel: Cancel
 continue: Continue
