@@ -13,7 +13,7 @@
         <slot />
       </main>
 
-      <footer class="flex justify-center items-center text-center p-4 gap-4">
+      <footer class="flex justify-center items-center text-center p-4 gap-4 text-sm">
         <p-dropdown icon @change="changeLocale">
           <template #button-content>
             <pi-internet-16 class="mr-2"/>
@@ -41,7 +41,9 @@
             </p-dropdown-item>
           </template>
         </p-dropdown>
-        ©{{  new Date().getFullYear()}}
+        <p-text class="text-subtle">
+          ©{{  new Date().getFullYear()}} Privy
+        </p-text>
       </footer>
     </div>
   </div>
