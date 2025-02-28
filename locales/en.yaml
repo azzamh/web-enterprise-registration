@@ -30,9 +30,13 @@ register-step-2:
     npwp: Company NPWP
     npwp-doc: NPWP document
     referral-code: Referral code (optional)
+    company-deed: Company deed
+    company-decree: Company decree
+    doc-power: Power of attorney
   check-title:
     no-npwp: I don't have NPWP yet
     enable-eseal: Enable e-seal and stamp feature
+    not-ceo: I am not the CEO
   check-subtitle:
     no-npwp: >-
       Please provide it later to comply with enterprise 
@@ -40,9 +44,12 @@ register-step-2:
     enable-eseal: >-
       Ensure the authenticity and integrity of your signed 
       documents with electronic seal and stamp
+    not-ceo: >-
+      A power of attorney document is required if you're not 
+      the primary director of the company
   placeholder:
     npwp-doc: No file chosen
-  npwp-file-info: Upload in PDF, PNG, or JPG/JPEG format (maximum size 5MB)
+  file-info: Upload in PDF, PNG, or JPG/JPEG format (maximum size 5MB)
   choose-file: Choose file
   no-file-chosen: No file chosen
   dont-have-privyid: Don't have a PrivyID?

@@ -30,9 +30,13 @@ register-step-2:
     npwp: NPWP Perusahaan
     npwp-doc: Dokumen NPWP
     referral-code: Kode referral (opsional)
+    company-deed: Akta Perusahaan
+    company-decree: Surat Keputusan Perusahaan
+    doc-power: Surat Kuasa
   check-title:
     no-npwp: Saya belum memiliki NPWP
     enable-eseal: Aktifkan fitur e-seal dan stempel
+    not-ceo: Saya bukan CEO
   check-subtitle:
     no-npwp: >-
       Harap sediakan nanti untuk mematuhi peraturan
@@ -40,9 +44,12 @@ register-step-2:
     enable-eseal: >-
       Pastikan keaslian dan integritas dokumen
       yang ditandatangani dengan segel dan stempel elektronik
+    not-ceo: >-
+      Dokumen kuasa wajib disertakan jika Anda bukan
+      direktur utama perusahaan
   placeholder:
     npwp-doc: Tidak ada file yang dipilih
-  npwp-file-info: Unggah dalam format PDF, PNG, atau JPG/JPEG (ukuran maksimal 5MB)
+  file-info: Unggah dalam format PDF, PNG, atau JPG/JPEG (ukuran maksimal 5MB)
   choose-file: Pilih file
   no-file-chosen: Tidak ada file yang dipilih
   dont-have-privyid: Belum memiliki PrivyID?

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl w-full overflow-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl w-full">
       <!-- Bagian Kiri -->
       <div class="p-8">
         <h2 class="text-2xl font-semibold mb-4">
@@ -103,6 +103,7 @@
                   v-model="form.npwpDocument"
                   class="w-full mt-1 p-3 border rounded-md focus:ring focus:ring-red-300"
                 />
+                <p-caption class="tet-subtle">{{ t('register-step-2.file-info') }}</p-caption>
               </p-form-group>
             </div>
 
@@ -111,7 +112,7 @@
               <p-checkbox
                 v-model="form.noNpwp"
                 >
-                <div>{{ t('register-step-2.check-title.no-npwp') }}</div>
+                <div class="text-sm">{{ t('register-step-2.check-title.no-npwp') }}</div>
                 <p-caption>{{ t('register-step-2.check-subtitle.no-npwp') }}</p-caption>
               </p-checkbox>
             </div>
@@ -121,7 +122,7 @@
               <p-checkbox
                 v-model="form.enableEseal"
               >
-                <div>{{ t('register-step-2.check-title.enable-eseal') }}</div>
+                <div class="text-sm">{{ t('register-step-2.check-title.enable-eseal') }}</div>
                 <p-caption>{{ t('register-step-2.check-subtitle.enable-eseal') }}</p-caption>
               </p-checkbox>
             </div>
@@ -142,6 +143,65 @@
               </div>
               </div>
             </p-banner>
+
+            <!-- Company deed -->
+            <div v-if="form.enableEseal">
+              <p-form-group
+                :label="t('register-step-2.label.company-deed')"
+                :required="form.enableEseal"
+              >
+                <p-input
+                  type="file"
+                  v-model="form.companyDeed"
+                  class="w-full mt-1 p-3 border rounded-md focus:ring focus:ring-red-300"
+                />
+                <p-caption class="tet-subtle">{{ t('register-step-2.file-info') }}</p-caption>
+              </p-form-group>
+            </div>
+
+            <!-- Company decree -->
+            <div v-if="form.enableEseal">
+              <p-form-group
+                :label="t('register-step-2.label.company-deed')"
+                :required="form.enableEseal"
+              >
+                <p-input
+                  type="file"
+                  v-model="form.companyDecree"
+                  class="w-full mt-1 p-3 border rounded-md focus:ring focus:ring-red-300"
+                />
+                <p-caption class="tet-subtle">{{ t('register-step-2.file-info') }}</p-caption>
+              </p-form-group>
+            </div>
+
+            <!-- Not  CEO-->
+            <div>
+              <p-form-group
+                v-if="form.enableEseal"
+              >
+                <p-checkbox
+                  v-model="form.notCeo"
+                >
+                  <div class="text-sm">{{ t('register-step-2.check-title.not-ceo') }}</div>
+                  <p-caption>{{ t('register-step-2.check-subtitle.e.not-ceo') }}</p-caption>
+                </p-checkbox>
+              </p-form-group>
+            </div>
+
+            <!-- Company Power of attorney -->
+            <div v-if="form.notCeo">
+              <p-form-group
+                :label="t('register-step-2.label.doc-power')"
+                :required="form.notCeo"
+              >
+                <p-input
+                  type="file"
+                  v-model="form.docPower"
+                  class="w-full mt-1 p-3 border rounded-md focus:ring focus:ring-red-300"
+                />
+                <p-caption class="tet-subtle">{{ t('register-step-2.file-info') }}</p-caption>
+              </p-form-group>
+            </div>
 
             <!-- Referral code (optional) + Check Button -->
             <div>
@@ -205,6 +265,10 @@ const form = ref({
   npwpDocument: null,
   noNpwp: false,
   enableEseal: false,
+  companyDeed: null,
+  companyDecree: null,
+  notCeo: false,
+  docPower: null,
   referralCode: "",
 })
 
@@ -258,6 +322,6 @@ function registerPrivy() {
 <style scoped lang="postcss">
 .container {
   @apply flex flex-row justify-center items-center;
-  height: calc(100vh - 14rem);
+  /* height: calc(100vh - 14rem); */
 }
 </style>

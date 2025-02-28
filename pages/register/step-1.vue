@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl w-full overflow-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl w-full">
       <!-- Left Section -->
       <div class="p-8">
         <img src="~/assets/images/img-enterprise.svg" alt="Company Building" class="mb-6" />
@@ -158,7 +158,7 @@ const submitForm = () => {
 <style scoped lang="postcss">
 .container{
   @apply flex flex-row justify-center items-center;
-  height: calc(100vh - 14rem);
+  /* height: calc(100vh - 14rem); */
 }
 :deep(sup) {
   top: -0.1em !important;
